@@ -69,6 +69,8 @@ LIB_MAPLE_HOME - it should point to the root directory of libmaple
                  variable. As an environment variable, you won't need
                  to edit it in Makefile and it will be used
                  automatically.
+                 Optionally, git submodules could be used to include
+                 LIB_MAPLE_HOME as a subdirectory in this repository.
 
 BOARD          - board type. Use 'make list-boards' to see the list of
                  supported boards.

@@ -1,0 +1,3 @@
+[submodule "librambutan"]
+	path = librambutan
+	url = https://github.com/rambutan32/librambutan

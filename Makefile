@@ -2,7 +2,7 @@
 BASEDIR := $(shell pwd)
 
 # Libmaple location
-LIB_MAPLE_HOME ?= ~/your/custom/path/to/libmaple
+LIB_MAPLE_HOME := $(BASEDIR)/librambutan/
 
 # Board configuration
 BOARD ?= maple
@@ -36,4 +36,6 @@ all: sketch
 
 # proxy target
 %:
+	# Ensuring that $(LIB_MAPLE_HOME)/main.cpp exists (should be empty)
+	touch $(LIB_MAPLE_HOME)/main.cpp
 	$(MAKE) -f $(LIB_MAPLE_HOME)/Makefile $@
